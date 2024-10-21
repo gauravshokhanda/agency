@@ -91,5 +91,6 @@ const featuresData: Feature[] = [
     paragraph:
       "Detailed market studies to understand trends, competition, and customer behavior.",
   },
+  
 ];
 export default featuresData;
