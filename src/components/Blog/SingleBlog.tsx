@@ -6,7 +6,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
   const { title, image, paragraph, author, tags, publishDate } = blog;
   return (
     <>
-      <div className="group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark">
+      {/* <div className="group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark">
         <Link
           href="/blog-details"
           className="relative block aspect-[37/22] w-full"
@@ -50,7 +50,27 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
             </div>
           </div>
         </div>
+      </div> */}
+      <div className="w-full">
+       
+      <div className="wow fadeInUp" data-wow-delay=".15s">
+          <Link
+          href="/blog-details"
+          className=""
+        ><div className="mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
+          {image}
+        </div></Link>
+          <Link
+          href="/blog-details"
+          className=""
+        ><h3 className="mb-5 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+          {title}
+        </h3></Link>
+        <p className="pr-[10px] text-base font-medium leading-relaxed text-body-color">
+          {paragraph}
+        </p>
       </div>
+    </div>
     </>
   );
 };
